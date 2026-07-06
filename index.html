@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Care | Blog de Autocuidado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌸 Bloom Care</h1>
+    <p>Seu cantinho de autocuidado e bem-estar</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#dicas">Dicas</a>
+    <a href="#rotina">Rotina</a>
+    <a href="#motivacao">Motivação</a>
+</nav>
+
+<section class="banner">
+    <div class="banner-texto">
+        <h2>Cuide de você todos os dias 💗</h2>
+        <p>
+            O autocuidado é um ato de amor-próprio. Pequenas atitudes podem
+            transformar sua saúde física, mental e emocional.
+        </p>
+        <button onclick="mostrarMensagem()">Receber Motivação</button>
+    </div>
+</section>
+
+<section id="sobre" class="card">
+    <h2>🌷 O que é autocuidado?</h2>
+
+    <p>
+        Autocuidado é o conjunto de hábitos que ajudam a manter o equilíbrio
+        físico, emocional e mental. Ele envolve cuidar da alimentação,
+        descansar, praticar exercícios, cultivar pensamentos positivos
+        e reservar momentos para si.
+    </p>
+
+    <p>
+        Cuidar de si não é egoísmo. Quando estamos bem, conseguimos lidar
+        melhor com desafios e cuidar das pessoas ao nosso redor.
+    </p>
+</section>
+
+<section id="dicas" class="card">
+
+<h2>💖 Dicas de autocuidado</h2>
+
+<div class="cards">
+
+<div class="mini-card">
+<h3>💧 Hidrate-se</h3>
+<p>Beba bastante água durante o dia para manter seu corpo saudável.</p>
+</div>
+
+<div class="mini-card">
+<h3>🥗 Alimentação</h3>
+<p>Prefira alimentos naturais e mantenha uma alimentação equilibrada.</p>
+</div>
+
+<div class="mini-card">
+<h3>😴 Sono</h3>
+<p>Durma entre 7 e 9 horas por noite para recuperar suas energias.</p>
+</div>
+
+<div class="mini-card">
+<h3>🚶 Exercícios</h3>
+<p>Movimente o corpo diariamente, mesmo que seja uma caminhada.</p>
+</div>
+
+<div class="mini-card">
+<h3>📖 Tempo para você</h3>
+<p>Leia, ouça músicas ou faça algo que você ama.</p>
+</div>
+
+<div class="mini-card">
+<h3>🧘 Respire</h3>
+<p>Pratique respiração profunda e meditação para aliviar o estresse.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="rotina" class="card">
+
+<h2>🌸 Rotina simples de autocuidado</h2>
+
+<ol>
+<li>Acorde e beba um copo de água.</li>
+<li>Faça sua higiene pessoal.</li>
+<li>Tome um café da manhã nutritivo.</li>
+<li>Reserve 10 minutos para respirar ou meditar.</li>
+<li>Faça alguma atividade física.</li>
+<li>Descanse durante o dia.</li>
+<li>Evite excesso de telas antes de dormir.</li>
+<li>Escreva algo pelo qual você é grato.</li>
+</ol>
+
+</section>
+
+<section id="motivacao" class="card">
+
+<h2>✨ Frases inspiradoras</h2>
+
+<p id="frase">
+Clique no botão abaixo para receber uma mensagem.
+</p>
+
+<button onclick="novaFrase()">
+Você merece o mesmo carinho que oferece aos outros. Cuide de si todos os dias. 💖
+</button>
+
+</section>
+
+<footer>
+
+<p>
+Feito com 💗 para incentivar o autocuidado.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<section class="card">
+    <h2>💬 Interaja com o blog</h2>
+
+    <div class="botoes">
+
+        <button id="likeBtn" class="reacao" onclick="curtir()">
+            👍 Gostei <span id="likes">0</span>
+        </button>
+
+        <button id="dislikeBtn" class="reacao" onclick="descurtir()">
+            👎 Não gostei <span id="dislikes">0</span>
+        </button>
+
+    </div>
+
+    <div class="comentarios">
+
+        <h3>Comentários</h3>
+
+        <textarea
+            id="comentario"
+            placeholder="Escreva seu comentário..."></textarea>
+
+        <br>
+
+        <button onclick="adicionarComentario()">
+            Enviar Comentário
+        </button>
+
+        <ul id="listaComentarios"></ul>
+
+    </div>
+
+</section>
